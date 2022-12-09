@@ -12,7 +12,7 @@ This project folder does not contain pexels API key. You can get key from [pexle
 For testing this project add API key to app.js file as variable "key".
 
 
-- ### Normal View
+- ###: Normal View
 ![](assets/readme_images/default_view.PNG)
 
 -### Search results view
