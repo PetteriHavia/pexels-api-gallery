@@ -13,13 +13,17 @@ For testing this project add API key to app.js file as variable "key".
 
 
 - ### 1: Normal View
+Default view when you open the project
 ![](assets/readme_images/default_view.PNG)
 
--### Search results view
+-### 2: Search results view
+Returns max 9 photos and places them in a grid.
 ![](assets/readme_images/results.PNG)
 
--### Gallery grid and load more button
+-### 3: Gallery grid and load more button
+Responsive grid that scales with device width
 ![](assets/readme_images/grid.PNG)
 
--### individual photo view after clicking view button
+-### 4: Individual photo view after clicking view button
+Contains more information about single photo
 ![](assets/readme_images/individual.PNG)
