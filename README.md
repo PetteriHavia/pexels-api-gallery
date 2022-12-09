@@ -8,4 +8,4 @@ Functions
 2. Load more photos using load more function
 4. View individual photos for more information
 
-![]assets/readme_images/default_view.png
+![](assets/readme_images/default_view.png)
