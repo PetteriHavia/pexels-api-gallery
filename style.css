@@ -1,0 +1,310 @@
+:root {
+  --white: hsl(0, 100%, 100%);
+  --l-blue: hsl(203, 100%, 50%);
+  --poppins: "Poppins", sans-serif;
+  --border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5rem;
+}
+
+.hero {
+  background-image: url("./assets/mountain.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+}
+
+.hero::after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.3;
+  background: #000;
+  min-height: 500px;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: var(--l-blue);
+}
+
+.black a {
+  margin: 0rem 2rem;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-cotainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-search {
+  width: 100%;
+  max-width: 450px;
+  padding: 1rem 1rem;
+  border-style: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-family: var(--poppins);
+}
+
+.search-btn {
+  padding: 1.2rem 1.5rem 1.1rem 1rem;
+  border-style: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.fa .fa-search:hover {
+  scale: (1.2);
+}
+
+input:focus {
+  outline: none;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  display: grid;
+  width: 100%;
+  max-width: 1500px;
+  margin: 3rem 0rem;
+  padding: 0rem 2rem;
+  column-gap: 3rem;
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.item {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0;
+  padding-left: 1rem;
+  color: var(--white);
+}
+
+.img-info {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photographer {
+  text-decoration: none;
+  color: #000;
+}
+
+.view,
+.photographer {
+  font-size: 1.2rem;
+}
+
+.view {
+  padding: 0.2rem 1rem;
+  background-color: var(--l-blue);
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.search-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.more-btn {
+  display: none;
+  padding: 0.5rem 3rem;
+  background-color: var(--l-blue);
+  border-style: none;
+  color: var(--white);
+  font-size: 1rem;
+  font-family: var(--poppins);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.more-btn:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+
+/*DETAILS PAGE*/
+.details-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  padding:0 1.5rem;
+}
+
+.btn-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.details-section {
+  display: flex;
+  justify-content: center;
+  padding:0 1.5rem;
+}
+
+.details-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.photo-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.back-button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-style: none;
+  font-family: var(--poppins);
+  margin-bottom: 2rem;
+  border-radius: var(--border-radius);
+  background-color: var(--l-blue);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.details-photo-name h1 {
+  color: var(--l-blue);
+  text-align: center;
+}
+
+.photo-info {
+  display: flex;
+  justify-content: space-between;
+  border-color: var(--l-blue);
+  padding: 1.5rem 0rem;
+  color: var(--l-blue);
+}
+
+.photo-info h3 {
+  font-size: 1.2rem;
+}
+
+.p-name {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.fa {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .input-container {
+    width: 90%;
+  }
+
+  .search-bar, .hero::after{
+    min-height: 300px;
+  }
+
+  .photo-info{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p-name{
+    margin-top: 0rem;
+  }
+
+  .details-photo-name h1{
+    margin-bottom: 0.5rem;
+  }
+
+  .column{
+    margin-bottom: 2rem
+  }
+
+  .back-button{
+    padding-left: 1rem;
+    padding-right:  1rem;
+  }
+
+}
